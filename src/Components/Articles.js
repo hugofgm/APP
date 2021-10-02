@@ -1,8 +1,8 @@
 import {collection, onSnapshot} from '@firebase/firestore'
 import { useState, useEffect } from 'react';
 import db from './firebase'
-import './App.css';
-import image from './Assets/raquelgira.JPG';
+import '../App.css'
+import image from '../Assets/raquelgira.JPG';
 
 const Articles = () => {
 
