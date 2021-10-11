@@ -1,16 +1,22 @@
-@font-face { font-family: AmaticSC; 
-  src: url('Assets/AmaticSC-Regular.ttf'); } 
-  
-@font-face { font-family: Signerica; 
-  src: url('Assets/Signerica_Medium.ttf'); } 
+@font-face {
+  font-family: AmaticSC;
+  src: url("Assets/AmaticSC-Regular.ttf");
+}
+
+@font-face {
+  font-family: Signerica;
+  src: url("Assets/Signerica_Medium.ttf");
+}
 
 * {
   font-family: Candara;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0px;
-  background-color: #F4F3EF;
+  background-color: #f4f3ef;
+  height: 200vh;
 }
 
 .hero-img {
@@ -24,16 +30,16 @@ body {
 
 .hero-txt {
   position: absolute;
-  text-align: center; 
+  text-align: center;
   top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 6vh;
   font-family: AmaticSC;
-} 
+}
 
-.signature{
+.signature {
   top: 52%;
   font-family: Signerica;
   font-size: 1.5vh;
@@ -58,7 +64,15 @@ body {
   width: 100px;
   border: unset;
   font-size: 20px;
-  margin-left: 5%;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  border: 0px;
+  padding: 0px;
+}
+
+.p-nav {
+  position: relative;
+  margin-top: 15px;
 }
 
 .nav-button:hover {
@@ -71,35 +85,63 @@ body {
   color: turquoise;
   margin-top: 0px;
   font-weight: 540;
-
 }
 
 .homeLogoSmall {
   font-size: 8px;
   color: gray;
-  margin-top: 17px;;
+  margin-top: 17px;
 }
-
-.divImg img {
-  width: 100%;
-  height: 100%;
+.articles {
+  display: grid;
+  grid-template-columns: 15%, 85%;
+}
+.filter {
+  width: 15vw;
+  height: 25vw;
+  grid-column: 1;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 5vh;
+  margin-left: 2.5vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.filter p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: rgb(146, 146, 146);
+}
+.filters {
+  border-top: 1px solid rgb(230, 230, 230);
+}
+.card .img {
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 25vw;
+  height: 25vw;
+  border-radius: 0px 5px 5px 0px;
 }
 
 .card {
   margin-top: 5vh;
-  margin-left: 5vw;
+  margin-left: 2.5vw;
   margin-right: 20vw;
+  height: 25vw;
+  width: 50vw;
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   background-color: white;
   display: grid;
   grid-template-columns: 50% 50%;
-  
+  grid-column: 2;
+  border-radius: 5px;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -113,13 +155,12 @@ body {
   margin-right: 50px;
 }
 
-.aboutMe-img img{
+.aboutMe-img img {
   height: auto;
   max-width: 23vw;
   object-fit: contain;
   position: relative;
   margin: 1vw;
-
 }
 
 .aboutMe {
@@ -127,11 +168,10 @@ body {
   margin-left: 70vw;
   margin-right: 5vw;
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   background-color: white;
   height: max-content;
-  
 }
 
 .aboutMe-txt {
